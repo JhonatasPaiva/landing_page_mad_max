@@ -1,0 +1,11 @@
+.footer {
+    background-color:#fa8e00;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+    }
+}

@@ -1,5 +1,8 @@
 @use 'variaveis';
 @use 'hero';
+@use 'shows';
+@use 'header';
+@use 'footer';
 
 @font-face {
     font-family: Avenir;
@@ -16,7 +19,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -47,6 +51,11 @@ body {
     @include text(12px);
 }
 
+.text--footer {
+    @include text(12px);
+    color: black;
+}
+
 .title--big {
     @include title(44px);
 }
@@ -65,6 +74,29 @@ body {
     text-decoration: underline;
 }
 
-.title--big {
-    @include title(44px);
+.genero {
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid white;
+    padding: 4px 8px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: #fa8e00;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
 }
